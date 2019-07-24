@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="bg-wrapper">
+      <img src="./assets/bansko-ski-map.jpg" alt="map of Bansko">
+    </div>
+    <div class="map-wrapper">
+      <InteractiveMap/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import InteractiveMap from './components/InteractiveMap.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    InteractiveMap
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @mixin absolute-pinned {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  body {
+    margin: 0;
+    #app {
+      position: relative;
+      .bg-wrapper {
+        @include absolute-pinned;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .map-wrapper {
+        @include absolute-pinned;
+      }
+    }
+  }
 </style>
