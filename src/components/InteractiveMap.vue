@@ -166,10 +166,11 @@
       </g>
     </svg>
     <!-- info modal -->
-    <div class="info-modal" v-if="showInfo" @click="showInfo = false">
-      <div class="modal-card">
-        <h1>Info modal</h1>
-        <p>
+    <div class="fixed inset-0 flex items-center justify-center z-10" v-if="showInfo">
+      <div class="fixed inset-0" style="background: rgba(0, 0, 0, .8)" @click="showInfo = false"></div>
+      <div class="bg-white p-4 z-10">
+        <h1 class="">Info modal</h1>
+        <p class="">
           {{ info[showInfo].body }}
         </p>
       </div>
@@ -219,8 +220,9 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style src="../assets/tailwind.css"></style>
 <style scoped lang="scss">
+  // map styles
   .st0 {
     fill: none;
     stroke: #f26767;
@@ -236,24 +238,5 @@ export default {
       .st1 { fill: $active; }
     }
     cursor: pointer;
-  }
-  .info-modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, .5);
-    z-index: 10;
-    .modal-card {
-      width: 66%;
-      height: 66%;
-      background-color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
   }
 </style>

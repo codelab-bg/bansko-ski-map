@@ -1,0 +1,4 @@
+@import './fonts/futura-pt.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
