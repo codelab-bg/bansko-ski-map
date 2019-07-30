@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="relative">
+  <div id="app" class="relative font-serif">
     <div class="absolute inset-0">
       <img class="w-full h-auto" src="./assets/bansko-ski-map.jpg" alt="map of Bansko">
     </div>
