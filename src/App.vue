@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="relative font-serif">
     <div class="absolute inset-0">
-      <img class="w-full h-auto" src="./assets/bansko-ski-map.jpg" alt="map of Bansko">
+      <img class="w-full h-auto" src="./assets/bg_bansko-ski-map.jpg" alt="map of Bansko">
     </div>
     <div class="absolute inset-0">
       <InteractiveMap/>
