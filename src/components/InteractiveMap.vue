@@ -1,6 +1,6 @@
 <template>
   <div>
-    <svg id="slope_with_problem" data-name="slope with problem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 709.08 914.04">
+    <svg data-name="slope with problem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 709.08 914.04" class="font-sans">
       <g class="hover-group" @click="showInfoModal('slopePlateauOne')">
         <g>
           <path class="cls-4" d="M319.35 135.19c-6.24 10.63-12 21.27-16.46 27.51-10.76 15.11-15.74 19.48-18.13 21.46a63.08 63.08 0 0 1-18.54 11.25c-7.34 2.79-8.39 1.45-16.05 4.38-7.07 2.71-11.89 6-18.75 10.83-3.7 2.59-3.47 2.66-15.63 12.3-8.87 7-13.61 10.65-20.21 14.58a39.4 39.4 0 0 1-13.13 5.42c-1.52.3-2.84.46-9 .63-9.66.26-19.29.23-23.54.21-8.86 0-9.31-.08-10.84.2-6.14 1.13-6.4 3-15.42 5.84-5.26 1.65-7.36 1.7-9.17 4"/>
@@ -148,7 +148,7 @@
           <path class="cls-3" d="M374.79 583.6a8.17 8.17 0 1 0-8.18 8.17 8.18 8.18 0 0 0 8.18-8.17zm-8.18-9.3a9.3 9.3 0 1 1-9.29 9.3 9.3 9.3 0 0 1 9.29-9.3z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('hilinValogLift')">
+      <g class="hover-group" @click="showInfoModal('chilinValogLift')">
         <g>
           <path class="cls-4" d="M267.61 634.43l14.11 61.75"/>
           <circle class="cls-1" cx="267.48" cy="633.87" r="2.3"/>
@@ -214,61 +214,82 @@
       </g>
     </svg>
     <!-- info modal -->
-    <div class="fixed inset-0 flex items-center justify-center z-10" v-if="showInfo">
-      <div class="fixed inset-0" style="background: rgba(0, 0, 0, .8)" @click="showInfo = false"></div>
-      <div class="bg-white p-4 z-10">
-        <h1 class="font-sans">Info modal</h1>
-        <p class="">
-          {{ info[showInfo].body }}
-        </p>
+    <div class="fixed inset-0 flex items-center justify-center z-10 p-4" v-if="visible">
+      <div class="fixed inset-0" style="background: rgba(0, 0, 0, .8)" @click="visible = false"></div>
+      <div class="z-10 w-full h-full max-h-full lg:max-w-2xl relative rounded-xl">
+        <button type="button" class="absolute top-0 right-0 mt-3 mr-3 rounded-full shadow-md" @click="visible = false">
+          <svg class="w-6 h-6" data-name="Close-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="20" fill="#fff"/>
+            <path d="M11.17 11.2l16.92 16.92m0-16.92L11.17 28.12" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="7"/>
+          </svg>
+        </button>
+        <div class="max-h-full overflow-y-auto rounded-xl">
+          <div class="bg-orange-400 flex flex-wrap pb-20 rounded-tl-xl rounded-tr-xl">
+            <span class="w-1/6"></span>
+            <h1 class="w-5/6 font-sans text-2xl mt-10 pr-2">{{ info[visible].title }}</h1>
+            <div class="w-1/6 px-2">
+              <svg class="sm:w-16 sm:h-16" data-name="X-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <circle cx="24.37" cy="24.34" r="20" fill="#f66"/>
+                <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="7" d="M15.54 15.54l16.92 16.92M32.46 15.54L15.54 32.46"/>
+              </svg>
+            </div>
+            <div class="w-5/6 mt-1 pr-4">
+              <p>{{ info[visible].description }}</p>
+            </div>
+          </div>
+          <div v-if="info[visible].content.length" class="bg-gray-400 rounded-bl-xl rounded-br-xl pb-8">
+            <div :key="i" v-for="(item, i) in info[visible].content">
+              <div class="flex" :class="{ 'mt-4': i !== 0 }">
+                <div class="w-1/6 px-2" :class="{ 'mt-2': i === 0 }">
+                  <svg class="sm:w-16 sm:h-16" data-name="Warting-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path d="M24.86 44.32h-.94l-.5-.08c-1-.12-2-.15-3-.36a19.78 19.78 0 0 1-12.09-7.69 20 20 0 0 1-3.82-10c0-.45-.09-.91-.14-1.36v-.94a3.47 3.47 0 0 0 .08-.55A13.64 13.64 0 0 1 5 19.49c2.73-8.87 8.7-14 18-15.08a13.4 13.4 0 0 1 2.19-.07 20 20 0 0 1 17.39 28.27 18.85 18.85 0 0 1-4.16 5.91 19.59 19.59 0 0 1-11.9 5.63zm-.68-10h13.33c.48 0 1 0 1.24-.48s0-.87-.25-1.27q-4.05-6.49-8.08-13-2.61-4.2-5.21-8.4l-.15-.17c-.5-.78-1.22-.77-1.72 0l-9.41 15.14c-1.38 2.22-2.77 4.44-4.14 6.67a.91.91 0 0 0 .77 1.52h13.62z" fill="#f66"/>
+                    <path d="M24.18 34.33H10.56a.91.91 0 0 1-.77-1.52c1.37-2.23 2.76-4.45 4.14-6.67L23.34 11c.5-.8 1.22-.81 1.72 0l.15.23q2.59 4.2 5.21 8.4 4 6.5 8.08 13c.24.4.51.78.25 1.27s-.76.48-1.24.48zm1.39-14.77c0-.41-.05-.77-.11-1.13-.12-.76-.5-1.1-1.17-1.12a1.33 1.33 0 0 0-1.42 1.08 4.07 4.07 0 0 0-.06.92c0 .87.08 1.74.14 2.61.09 1.22.18 2.44.31 3.65.08.7.38 1 .85 1s.8-.35.9-1 .13-1.14.18-1.7c.13-1.45.26-2.87.38-4.31zm-2.78 9.89a1.38 1.38 0 0 0 2.76.05 1.38 1.38 0 0 0-2.76-.05z" fill="#fff"/>
+                    <path d="M25.57 19.56c-.12 1.41-.25 2.86-.38 4.31-.05.56-.1 1.13-.18 1.7s-.43 1.05-.9 1-.77-.34-.85-1c-.13-1.21-.22-2.43-.31-3.65-.06-.87-.11-1.74-.14-2.61a4.07 4.07 0 0 1 .06-.92 1.33 1.33 0 0 1 1.42-1.08c.67 0 1.05.36 1.17 1.12.06.36.07.72.11 1.13zM22.79 29.45a1.38 1.38 0 0 1 2.76.05 1.38 1.38 0 0 1-2.76-.05z" fill="#f66"/>
+                  </svg>
+                </div>
+                <div class="w-5/6 pr-4">
+                  <p class="bg-white rounded-xl p-4 text-red-500 uppercase font-sans" :class="{ '-mt-16': i === 0 }">{{ item.body }}</p>
+                </div>
+              </div>
+              <div :key="s" class="flex mt-4" v-for="(source, s) in item.sources">
+                <div class="w-1/6 px-2">
+                  <svg class="sm:w-16 sm:h-16" data-name="Source-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <circle cx="24.37" cy="24.34" r="20" fill="#f66"/>
+                    <text transform="matrix(1.01 0 0 1 9.78 27.08)" font-size="7.575" fill="#fff" font-family="Futura-Bold, Futura" font-weight="700">
+                      http://
+                    </text>
+                  </svg>
+                </div>
+                <a class="w-5/6 mt-1 pr-4 text-blue-800 flex items-center" :href="source.link" v-text="source.text" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import info from '../data.json'
 export default {
   name: 'InteractiveMap',
   data () {
     return {
-      showInfo: false,
-      info: {
-        banskoCity: {
-          body: 'Info about the city of Bansko'
-        },
-        ironBridgeLift: {
-          body: 'Info about the iron bridge'
-        },
-        slopeShiligarnikTwo: {
-          body: 'Info about the Shiligarnik Two ski slope'
-        },
-        slopePlateauOne: {
-          body: 'Info about the Plateau One ski slope'
-        },
-        slopeStrajite: {
-          body: 'Info about the Strajite ski slope'
-        },
-        tzurnaMogilaLift: {
-          body: 'Info about the Tzurna Mogila lift'
-        },
-        slopeTzurnaMogila: {
-          body: 'Info about the Tzurna Mogila ski slope'
-        },
-        waterReservoir: {
-          body: 'Info about the Water Reservoir'
-        },
-        slopeChilinValogOne: {
-          body: 'Info about the Chilin Valog ski slope'
-        },
-        hilinValogLift: {
-          body: 'Info about the Chilin Valog lift'
-        }
-      }
+      visible: false,
+      info: info
     }
+  },
+  created () {
+    document.addEventListener('keyup', e => {
+      if (e.key === 'Escape') {
+        this.visible = false
+      }
+    })
   },
   methods: {
     showInfoModal (id) {
-      this.showInfo = id
+      this.visible = id
     }
   }
 }
@@ -279,7 +300,6 @@ export default {
   .cls-1, .cls-8 { fill: theme('colors.red.500'); }
   .cls-2 { font-size: 8px; }
   .cls-2, .cls-3, .cls-5, .cls-6 { fill: #fff; }
-  .cls-2, .cls-5, .cls-6 { font-family: FuturaPT-BoldObl, Futura PT Bold Italic; font-weight: 700; font-style: oblique; }
   .cls-4 { fill: none; stroke: theme('colors.red.500'); stroke-width: 3px; }
   .cls-4, .cls-8, .cls-9 { stroke-miterlimit: 10; }
   .cls-5 { font-size: 11px; }
