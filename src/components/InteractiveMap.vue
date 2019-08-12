@@ -216,7 +216,7 @@
     <!-- info modal -->
     <div class="fixed inset-0 flex items-center justify-center z-10 p-4" v-if="visible">
       <div class="fixed inset-0" style="background: rgba(0, 0, 0, .8)" @click="visible = false"></div>
-      <div class="z-10 w-full h-full max-h-full lg:max-w-2xl relative rounded-xl">
+      <div class="z-10 w-full h-full max-h-full lg:max-w-2xl relative rounded-xl" @click.self="visible = false">
         <button type="button" class="absolute top-0 right-0 mt-3 mr-3 rounded-full shadow-md" @click="visible = false">
           <svg class="w-6 h-6" data-name="Close-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
             <circle cx="20" cy="20" r="20" fill="#fff"/>
@@ -224,17 +224,23 @@
           </svg>
         </button>
         <div class="max-h-full overflow-y-auto rounded-xl">
-          <div class="bg-orange-400 flex flex-wrap pb-20 rounded-tl-xl rounded-tr-xl">
-            <span class="w-1/6"></span>
-            <h1 class="w-5/6 font-sans text-2xl mt-10 pr-2">{{ info[visible].title }}</h1>
-            <div class="w-1/6 px-2">
-              <svg class="sm:w-16 sm:h-16" data-name="X-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                <circle cx="24.37" cy="24.34" r="20" fill="#f66"/>
-                <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="7" d="M15.54 15.54l16.92 16.92M32.46 15.54L15.54 32.46"/>
-              </svg>
+          <div class="bg-orange-400 pb-20 rounded-tl-xl rounded-tr-xl">
+            <div class="flex">
+              <div class="w-1/6 px-2"></div>
+              <div class="w-5/6 pr-4">
+                <h1 class="font-sans text-2xl mt-10">{{ info[visible].title }}</h1>
+              </div>
             </div>
-            <div class="w-5/6 mt-1 pr-4">
-              <p>{{ info[visible].description }}</p>
+            <div class="flex mt-1">
+              <div class="w-1/6 px-2">
+                <svg class="sm:w-16 sm:h-16" data-name="X-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <circle cx="24.37" cy="24.34" r="20" fill="#f66"/>
+                  <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="7" d="M15.54 15.54l16.92 16.92M32.46 15.54L15.54 32.46"/>
+                </svg>
+              </div>
+              <div class="w-5/6 pr-4 mt-1">
+                <p>{{ info[visible].description }}</p>
+              </div>
             </div>
           </div>
           <div v-if="info[visible].content.length" class="bg-gray-400 rounded-bl-xl rounded-br-xl pb-8">
@@ -248,7 +254,7 @@
                   </svg>
                 </div>
                 <div class="w-5/6 pr-4">
-                  <p class="bg-white rounded-xl p-4 text-red-500 uppercase font-sans" :class="{ '-mt-16': i === 0 }">{{ item.body }}</p>
+                  <p class="bg-white min-h-32 rounded-xl p-4 text-red-500 uppercase font-sans" :class="{ '-mt-16': i === 0 }" v-text="item.body"></p>
                 </div>
               </div>
               <div :key="s" class="flex mt-4" v-for="(source, s) in item.sources">
