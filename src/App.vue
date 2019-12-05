@@ -1,10 +1,10 @@
 <template>
-  <div class="relative">
+  <div id="app" class="relative font-serif">
     <div class="p-4 lg:py-8">
       <h1 class="text-center leading-tight md:leading-normal text-3xl">Открий проблемните ски писти в Банско</h1>
       <p class="text-center text-xl mt-4">Кликни върху съоръженията и научи повече</p>
     </div>
-    <div id="app" class="relative font-serif lg:max-w-4xl mx-auto">
+    <div class="relative lg:max-w-4xl mx-auto">
       <div class="absolute inset-0">
         <img class="w-full h-auto" src="./assets/bg_bansko-ski-map.jpg" alt="map of Bansko">
       </div>
