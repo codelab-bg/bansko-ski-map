@@ -1,7 +1,7 @@
 <template>
   <div>
     <svg data-name="slope with problem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 709.08 914.04" class="font-sans">
-      <g class="hover-group" @click="showInfoModal('slopePlateauOne')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('slopePlateauOne')">
         <g>
           <path class="cls-4" d="M319.35 135.19c-6.24 10.63-12 21.27-16.46 27.51-10.76 15.11-15.74 19.48-18.13 21.46a63.08 63.08 0 0 1-18.54 11.25c-7.34 2.79-8.39 1.45-16.05 4.38-7.07 2.71-11.89 6-18.75 10.83-3.7 2.59-3.47 2.66-15.63 12.3-8.87 7-13.61 10.65-20.21 14.58a39.4 39.4 0 0 1-13.13 5.42c-1.52.3-2.84.46-9 .63-9.66.26-19.29.23-23.54.21-8.86 0-9.31-.08-10.84.2-6.14 1.13-6.4 3-15.42 5.84-5.26 1.65-7.36 1.7-9.17 4"/>
           <circle class="cls-1" cx="244.94" cy="201.34" r="7.93"/>
@@ -17,7 +17,7 @@
           <path class="cls-3" d="M153.48 171.68l-.21 7.13h-1l-.22-7.13h1.43zM152.77 180a.85.85 0 0 1 .88.92.87.87 0 0 1-.88.93.88.88 0 0 1-.87-.93.87.87 0 0 1 .87-.92z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('slopeShiligarnikTwo')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('slopeShiligarnikTwo')">
         <g>
           <path class="cls-4" d="M207.19 477.42a15.69 15.69 0 0 1-.67-7.06c.22-1.51 17.22-27 8.44-55.48-3.15-10.19-2.55-9.69-3.6-11.88-2.85-5.92-5.07-6.62-8.44-12.81a28 28 0 0 1-1-2.06 8.09 8.09 0 0 0-5.89-4.48 49.26 49.26 0 0 1-16.66-5.7c-4.47-2.55-17.83-10.15-19.59-21.88-.41-2.72-.16-5.42-1.67-10a36.8 36.8 0 0 0-5.62-10.42c-4.06-5.67-7.92-9.94-15.42-17.71-10-10.36-10-9.88-11.67-12.3-3.34-4.82-4.93-9.61-8.13-19.17a94.74 94.74 0 0 1-4.58-24.59 13.23 13.23 0 0 1 1.08-6.9"/>
           <circle class="cls-1" cx="206.82" cy="477.42" r="2.3"/>
@@ -34,7 +34,7 @@
           <path class="cls-3" d="M43.77 320a8.17 8.17 0 1 0-8.17 8.17 8.19 8.19 0 0 0 8.17-8.17zm-8.17-9.3a9.3 9.3 0 1 1-9.31 9.3 9.3 9.3 0 0 1 9.31-9.27z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('ironBridgeLift')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('ironBridgeLift')">
         <g>
           <path class="cls-1" d="M146.94 429.26s7.29-14.05 20.07-17.83c0 0 1.56-.18 0-.47-12.78-3.78-20.07-17.82-20.07-17.82v10.37l-96.3.09v15.2l96.29.08z"/>
           <text class="cls-2" transform="translate(55.42 413.67)">Лифт “Железен мост”</text>
@@ -57,7 +57,7 @@
           <path class="cls-3" d="M194.11 411.72l-.76-4.33a1.44 1.44 0 0 0-1.43-1.2h-6.54v-1.29a.27.27 0 0 0-.53 0v1.29h-6.35a1.45 1.45 0 0 0-1.4 1.13l-.95 4.32a1.44 1.44 0 0 0 1.09 1.71 1.55 1.55 0 0 0 .31 0h.57v1.45a.5.5 0 0 0 .51.5.5.5 0 0 0 .5-.5v-1.45h.94v1.45a.51.51 0 0 0 .53.48.52.52 0 0 0 .48-.48v-1.45h.72v1.45a.51.51 0 0 0 .51.51.51.51 0 0 0 .5-.51v-1.45h.93v1.45a.51.51 0 0 0 1 0v-1.45h.71v1.45a.51.51 0 0 0 1 0v-1.45h.93v1.45a.52.52 0 0 0 .54.48.51.51 0 0 0 .47-.48v-1.45h.72v1.45a.51.51 0 0 0 1 0v-1.45h.93v1.45a.51.51 0 0 0 .51.51.5.5 0 0 0 .5-.51v-1.45h.6a1.41 1.41 0 0 0 1.42-1.41 1 1 0 0 0 0-.24zm-.8.76a.81.81 0 0 1-.6.28h-.6v-.31a.5.5 0 0 0-.37-.49v-1.23a.94.94 0 0 0-.94-.94h-.27a.94.94 0 0 0-.94.94v1.21a.52.52 0 0 0-.44.51v.31h-.72v-.31a.5.5 0 0 0-.37-.49v-1.23a1 1 0 0 0-.94-.94h-.27a1 1 0 0 0-.94.94v1.21a.53.53 0 0 0-.44.51v.31h-.71v-.31a.5.5 0 0 0-.37-.49v-1.23a1 1 0 0 0-.94-.94h-.27a.94.94 0 0 0-.94.94v1.21a.52.52 0 0 0-.44.51v.31h-.72v-.31a.5.5 0 0 0-.36-.49v-1.23a.94.94 0 0 0-.94-.94h-.27a1 1 0 0 0-.95.94v1.21a.52.52 0 0 0-.44.51v.31h-.57a.82.82 0 0 1-.82-.81.55.55 0 0 1 0-.18l.95-4.33a.81.81 0 0 1 .8-.63h13.42a.82.82 0 0 1 .82.68l.75 4.34a.85.85 0 0 1-.16.65z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('slopeStrajite')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('slopeStrajite')">
         <g>
           <path class="cls-4" d="M212.77 521.3c0-25.6-2-36.1-4.22-40.63a23.39 23.39 0 0 0-3.92-5.73A159.12 159.12 0 0 1 194 461.69"/>
           <circle class="cls-1" cx="213" cy="520.79" r="2.3"/>
@@ -74,7 +74,7 @@
           <path class="cls-3" d="M301.44 473.22a9.31 9.31 0 1 1 9.31 9.3 9.31 9.31 0 0 1-9.31-9.3zm1.14 0a8.17 8.17 0 1 0 8.17-8.18 8.18 8.18 0 0 0-8.17 8.18z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('tzurnaMogilaLift')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('tzurnaMogilaLift')">
         <g>
           <path class="cls-4" d="M687.54 221.24L468.75 517.17"/>
           <ellipse class="cls-1" cx="687.25" cy="221.5" rx="2.3" ry="2.29"/>
@@ -95,7 +95,7 @@
           <ellipse class="cls-3" cx="509" cy="283.3" rx=".88" ry=".92"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('slopeTzurnaMogila')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('slopeTzurnaMogila')">
         <g>
           <circle class="cls-1" cx="687.22" cy="227.12" r="2.3"/>
           <path class="cls-4" d="M687.22 226.62c-3 43.81 1.45 23.18-1.76 52.56-.5 4.59-4.66 12.8-11.67 21.67-3.13 4 3.38-3.43-11.54 11.17-6.63 6.49-13.55 13.59-19.72 23.84-3.13 5.2-6.4 10.73-8.33 18.75-1.14 4.74-.71 5.76-1.67 18.34-.13 1.67-1 12.69-2.5 24.17-1.61 12.19-2.42 18.28-3.92 22.21a55.56 55.56 0 0 1-16.92 23.21c-7.48 5.93-10.21 4.61-19 12.16a93.36 93.36 0 0 0-11.42 12A174.41 174.41 0 0 0 567.1 483c-5.84 8.77-5.87 9.63-9.58 14.59-3 4-6.64 8.87-10.84 12.5-3.16 2.74-9.54 7.28-26.25 10a137.73 137.73 0 0 1-47.51-.83"/>
@@ -112,7 +112,7 @@
           <path class="cls-3" d="M482.17 427.59a8.17 8.17 0 1 0-8.17 8.16 8.17 8.17 0 0 0 8.17-8.16zm-8.17-9.3a9.3 9.3 0 1 1-9.3 9.3 9.3 9.3 0 0 1 9.3-9.3z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('waterReservoir')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('waterReservoir')">
         <g>
           <path class="cls-1" d="M445.64 536.27s-7.29-14-20.07-17.82c0 0-1.56-.19 0-.48 12.79-3.77 20.08-17.82 20.08-17.82v10.38l85.8.08v15.2l-85.79.08z"/>
           <text class="cls-2" transform="translate(445.49 520.69)">Резервоар за вода</text>
@@ -130,7 +130,7 @@
           <path class="cls-7" d="M418.93 522.74a5.9 5.9 0 0 0 .86-.06 13.21 13.21 0 0 1-24.85 0 6.3 6.3 0 0 0 .75 0 5.36 5.36 0 0 0 3.89-1.48 5.39 5.39 0 0 0 3.88 1.48 5.29 5.29 0 0 0 3.89-1.48 5.83 5.83 0 0 0 7.73 0 5.32 5.32 0 0 0 3.85 1.54zM394.62 521.67c.09.35.2.69.32 1a5.8 5.8 0 0 1-.85-.14l.22-.94z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('slopeChilinValogOne')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('slopeChilinValogOne')">
         <g>
           <path class="cls-4" d="M226.84 599.13a23.38 23.38 0 0 0 4.06 4.06c4.76 3.74 8.18 3.41 16.56 6.88 7.82 3.23 9.32 5.36 10 6.88 1 2.19 5 3.51 4.76 5"/>
           <circle class="cls-1" cx="225.95" cy="598.69" r="2.3"/>
@@ -148,7 +148,7 @@
           <path class="cls-3" d="M374.79 583.6a8.17 8.17 0 1 0-8.18 8.17 8.18 8.18 0 0 0 8.18-8.17zm-8.18-9.3a9.3 9.3 0 1 1-9.29 9.3 9.3 9.3 0 0 1 9.29-9.3z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('chilinValogLift')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('chilinValogLift')">
         <g>
           <path class="cls-4" d="M267.61 634.43l14.11 61.75"/>
           <circle class="cls-1" cx="267.48" cy="633.87" r="2.3"/>
@@ -174,7 +174,7 @@
           <path class="cls-3" d="M270.78 655.7a1 1 0 0 0-.86 1.07l.41 3.5a.94.94 0 0 0 .32.61.7.7 0 0 0 .26.28l2 1.34v2.7a.67.67 0 0 0 1.34 0v-3.43a.82.82 0 0 0-.37-.69l-1.64-1.08-.31-2.76h2.78a.55.55 0 0 0 .54-.55.54.54 0 0 0-.54-.54h-3a1 1 0 0 0-.93-.45zm4.94.49l2.32-2.57-.38-.34-2.27 2.51a1.26 1.26 0 0 1 .33.4zm-2.75 3l1.29-1.42h-.69l-1 1.08zm7.77 4.56l-.47.11a.72.72 0 0 1-.52.87l-12.19 3.1.12.46 12.18-3.09a1.21 1.21 0 0 0 .88-1.41zm-9.58-.72a.32.32 0 0 0 .46-.06.32.32 0 0 0-.05-.45l-2.1-1.67a.33.33 0 0 0-.46.06.32.32 0 0 0 .05.45zm-.42-7.65a1.24 1.24 0 0 0 1.22-1.26 1.23 1.23 0 1 0-2.46 0 1.23 1.23 0 0 0 1.24 1.3z"/>
         </g>
       </g>
-      <g class="hover-group" @click="showInfoModal('banskoCity')">
+      <g class="hover-group cursor-pointer" @click="showInfoModal('banskoCity')">
         <g>
           <path class="cls-1" d="M264.83 848s-7.28-14-20.07-17.82c0 0-1.55-.19 0-.48 12.79-3.78 20.07-17.82 20.07-17.82v10.38l49.94.08v15.2l-49.94.08z"/>
           <text class="cls-2" transform="translate(265.02 832.37)">гр. Банско</text>
@@ -216,58 +216,40 @@
     <!-- info modal -->
     <div class="fixed inset-0 flex items-center justify-center z-10 p-4" v-if="visible">
       <div class="fixed inset-0" style="background: rgba(0, 0, 0, .8)" @click="visible = false"></div>
-      <div class="z-10 w-full h-full max-h-full lg:max-w-2xl relative rounded-xl" @click.self="visible = false">
-        <button type="button" class="absolute top-0 right-0 mt-3 mr-3 rounded-full shadow-md" @click="visible = false">
-          <svg class="w-6 h-6" data-name="Close-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-            <circle cx="20" cy="20" r="20" fill="#fff"/>
-            <path d="M11.17 11.2l16.92 16.92m0-16.92L11.17 28.12" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="7"/>
-          </svg>
-        </button>
-        <div class="max-h-full overflow-y-auto rounded-xl">
-          <div class="bg-orange-400 pb-20 rounded-tl-xl rounded-tr-xl">
-            <div class="flex">
-              <div class="w-1/6 px-2"></div>
-              <div class="w-5/6 pr-4">
-                <h1 class="font-sans text-2xl mt-10">{{ info[visible].title }}</h1>
+      <div class="z-10 w-full h-full max-h-full lg:max-w-3xl relative" @click.self="visible = false">
+        <div class="max-h-full overflow-y-auto">
+          <div class="bg-gray-800">
+            <div class="flex items-center px-4 pt-4 lg:px-10 lg:pt-10">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 lg:w-20 lg:h-20" viewBox="0 0 74 74"><path d="M37.76 71.83h-1.73l-.91-.14c-1.85-.21-3.74-.28-5.55-.65A36.48 36.48 0 018.18 58.31 34.4 34.4 0 01.33 39.75l-.3-3v-1.68a7.93 7.93 0 00.14-1 29.39 29.39 0 011.67-9.06c5.07-13.88 15-22.19 30-24.6a35.12 35.12 0 0116.19 1.3c18 5.62 28.67 23.32 24.92 41.28a34.91 34.91 0 01-13.36 21.05 36.21 36.21 0 01-18.83 7.44z" fill="#f16667"/><g fill="#fff"><path d="M43.91 32.4a1 1 0 101 1 1 1 0 00-1-1z"/><path d="M53 48.57h-1.24l-3.29-18.44a7.06 7.06 0 00-7-5.81h-9.42a7.07 7.07 0 00-7 5.81l-3.29 18.44h-1.21a3 3 0 00-3 3v4a1 1 0 001 1h36.37a1 1 0 001-1v-4a3 3 0 00-2.92-3zM27.16 30.49a5 5 0 015-4.15h9.42a5.06 5.06 0 015 4.15l3.18 18.08H23.93zm26.85 24.14H19.66v-3a1 1 0 011-1h32.33a1 1 0 011 1z"/><path d="M47.16 45.36l-1.48-8.16a1 1 0 00-1.17-.81 1 1 0 00-.82 1.17l1.49 8.16a1.016 1.016 0 102-.36zM61.69 32.4H53a1 1 0 000 2h8.69a1 1 0 100-2zM20.67 32.4h-8.69a1 1 0 000 2h8.69a1 1 0 000-2zM54.7 15.55a1 1 0 00-1.43 0l-5.72 5.72a1.011 1.011 0 001.43 1.43l5.72-5.72a1 1 0 000-1.43zM26.12 21.27l-5.71-5.72a1 1 0 00-1.43 0 1 1 0 000 1.43l5.71 5.72a1 1 0 001.43 0 1 1 0 000-1.43zM36.84 8.16a1 1 0 00-1 1v8.08a1 1 0 002 0V9.16a1 1 0 00-1-1z"/></g></svg>
+              </div>
+              <div class="flex-1 p-6 ml-4 text-white text-center relative border-gray-800 border-4" style="background-color: #F26767">
+                <h1 class="text-xl font-bold text-2xl mb-4">{{ info[visible].title }}</h1>
+                <p v-for="(description, i) in info[visible].description" :key="i">
+                  <strong>{{ description.prefix }}:</strong> {{ description.text }}
+                </p>
+                <span class="absolute bottom-0 left-0 w-4 h-4 lg:w-10 lg:h-10 bg-white" style="transform: translate(120%, 50%) rotate(45deg); background-color: #F26767;"></span>
               </div>
             </div>
-            <div class="flex mt-1">
-              <div class="w-1/6 px-2">
-                <svg class="sm:w-16 sm:h-16" data-name="X-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                  <circle cx="24.37" cy="24.34" r="20" fill="#f66"/>
-                  <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="7" d="M15.54 15.54l16.92 16.92M32.46 15.54L15.54 32.46"/>
-                </svg>
+            <div class="flex items-center p-4 lg:p-10 relative">
+              <div class="z-20">
+                <svg class="w-10 h-10 lg:w-20 lg:h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 74"><path d="M37.53 71.39h-1.72l-.9-.14c-1.85-.21-3.72-.28-5.53-.65A36.23 36.23 0 018.11 57.94a34.18 34.18 0 01-7.8-18.46c-.11-1-.2-2-.31-3V34.8a7.52 7.52 0 00.15-1 29 29 0 011.66-9c5-13.82 15-22.08 29.85-24.47a34.83 34.83 0 0116.09 1.29c17.86 5.59 28.52 23.2 24.79 41.05a34.7 34.7 0 01-13.28 20.94 36.17 36.17 0 01-18.68 7.4zm-.77-18.57h24.42c.87 0 1.76 0 2.26-.86s0-1.55-.45-2.25q-7.41-11.61-14.8-23.23-4.79-7.49-9.55-15l-.27-.41c-.92-1.39-2.24-1.38-3.14 0L17.97 38.15c-2.52 4-5.06 7.93-7.58 11.91-.9 1.42-.19 2.67 1.52 2.71h24.85z" fill="#f16667"/><path d="M36.76 52.82H11.91c-1.71 0-2.42-1.29-1.52-2.71 2.52-4 5.06-7.94 7.58-11.91l17.26-27.05c.9-1.42 2.22-1.43 3.14 0l.27.41q4.77 7.5 9.55 15 7.39 11.61 14.8 23.23c.45.7.94 1.39.45 2.25s-1.39.86-2.26.86zm2.54-26c-.07-.72-.08-1.37-.19-2a2.05 2.05 0 00-2.15-2 2.41 2.41 0 00-2.6 1.92 6.6 6.6 0 00-.12 1.66c.07 1.55.15 3.11.27 4.66.16 2.17.33 4.35.57 6.52.13 1.25.69 1.84 1.55 1.86s1.47-.63 1.65-1.87c.14-1 .24-2 .33-3 .24-2.63.47-5.22.69-7.74zm-5.08 17.67a2.53 2.53 0 005 .1 2.52 2.52 0 00-2.52-2.51 2.49 2.49 0 00-2.48 2.42z" fill="#fff"/><path d="M39.3 26.83c-.22 2.52-.45 5.11-.69 7.7-.09 1-.19 2-.33 3-.18 1.24-.78 1.89-1.65 1.87s-1.42-.61-1.55-1.86c-.24-2.17-.41-4.35-.57-6.52-.12-1.55-.2-3.11-.27-4.66a6.6 6.6 0 01.12-1.66 2.41 2.41 0 012.6-1.92 2.05 2.05 0 012.15 2c.11.68.12 1.37.19 2.05zM34.22 44.5a2.49 2.49 0 012.53-2.41 2.52 2.52 0 012.52 2.51 2.53 2.53 0 01-5-.1z" fill="#f16667"/></svg>
               </div>
-              <div class="w-5/6 pr-4 mt-1">
-                <p>{{ info[visible].description }}</p>
-              </div>
-            </div>
-          </div>
-          <div v-if="info[visible].content.length" class="bg-gray-400 rounded-bl-xl rounded-br-xl pb-8">
-            <div :key="i" v-for="(item, i) in info[visible].content">
-              <div class="flex" :class="{ 'mt-4': i !== 0 }">
-                <div class="w-1/6 px-2" :class="{ 'mt-2': i === 0 }">
-                  <svg class="sm:w-16 sm:h-16" data-name="Warting-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                    <path d="M24.86 44.32h-.94l-.5-.08c-1-.12-2-.15-3-.36a19.78 19.78 0 0 1-12.09-7.69 20 20 0 0 1-3.82-10c0-.45-.09-.91-.14-1.36v-.94a3.47 3.47 0 0 0 .08-.55A13.64 13.64 0 0 1 5 19.49c2.73-8.87 8.7-14 18-15.08a13.4 13.4 0 0 1 2.19-.07 20 20 0 0 1 17.39 28.27 18.85 18.85 0 0 1-4.16 5.91 19.59 19.59 0 0 1-11.9 5.63zm-.68-10h13.33c.48 0 1 0 1.24-.48s0-.87-.25-1.27q-4.05-6.49-8.08-13-2.61-4.2-5.21-8.4l-.15-.17c-.5-.78-1.22-.77-1.72 0l-9.41 15.14c-1.38 2.22-2.77 4.44-4.14 6.67a.91.91 0 0 0 .77 1.52h13.62z" fill="#f66"/>
-                    <path d="M24.18 34.33H10.56a.91.91 0 0 1-.77-1.52c1.37-2.23 2.76-4.45 4.14-6.67L23.34 11c.5-.8 1.22-.81 1.72 0l.15.23q2.59 4.2 5.21 8.4 4 6.5 8.08 13c.24.4.51.78.25 1.27s-.76.48-1.24.48zm1.39-14.77c0-.41-.05-.77-.11-1.13-.12-.76-.5-1.1-1.17-1.12a1.33 1.33 0 0 0-1.42 1.08 4.07 4.07 0 0 0-.06.92c0 .87.08 1.74.14 2.61.09 1.22.18 2.44.31 3.65.08.7.38 1 .85 1s.8-.35.9-1 .13-1.14.18-1.7c.13-1.45.26-2.87.38-4.31zm-2.78 9.89a1.38 1.38 0 0 0 2.76.05 1.38 1.38 0 0 0-2.76-.05z" fill="#fff"/>
-                    <path d="M25.57 19.56c-.12 1.41-.25 2.86-.38 4.31-.05.56-.1 1.13-.18 1.7s-.43 1.05-.9 1-.77-.34-.85-1c-.13-1.21-.22-2.43-.31-3.65-.06-.87-.11-1.74-.14-2.61a4.07 4.07 0 0 1 .06-.92 1.33 1.33 0 0 1 1.42-1.08c.67 0 1.05.36 1.17 1.12.06.36.07.72.11 1.13zM22.79 29.45a1.38 1.38 0 0 1 2.76.05 1.38 1.38 0 0 1-2.76-.05z" fill="#f66"/>
-                  </svg>
-                </div>
-                <div class="w-5/6 pr-4">
-                  <p class="bg-white min-h-32 rounded-xl p-4 text-red-500 uppercase font-sans" :class="{ '-mt-16': i === 0 }" v-text="item.body"></p>
+              <div class="flex-1 z-20">
+                <div class="px-6 py-5 ml-4 mb-4 border-gray-800 border-4 text-sm" style="background-color: #EFEEEC;"
+                     v-for="(content, i) in info[visible].content" :key="i"
+                >
+                  <p>{{ content.body }}</p>
+                  <hr class="border-black border-b">
+                  <p><strong>ЦИТАТ ОТ:</strong></p>
+                  <blockquote class="pl-8 underline italic"
+                              v-for="(source, i) in content.sources" :key="i"
+                              :cite="source.link">
+                    <a target="_blank" :href="source.link">{{ source.text }}</a>
+                  </blockquote>
                 </div>
               </div>
-              <div :key="s" class="flex mt-4" v-for="(source, s) in item.sources">
-                <div class="w-1/6 px-2">
-                  <svg class="sm:w-16 sm:h-16" data-name="Source-Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                    <circle cx="24.37" cy="24.34" r="20" fill="#f66"/>
-                    <text transform="matrix(1.01 0 0 1 9.78 27.08)" font-size="7.575" fill="#fff" font-family="Futura-Bold, Futura" font-weight="700">
-                      http://
-                    </text>
-                  </svg>
-                </div>
-                <a class="w-5/6 mt-1 pr-4 text-blue-800 flex items-center" :href="source.link" v-text="source.text" target="_blank"></a>
-              </div>
+              <div class="absolute left-0 right-0 bottom-0 w-full" style="height: 50%; background-color: #7F8FA6"></div>
             </div>
           </div>
         </div>
@@ -317,5 +299,29 @@ export default {
       .cls-1, .cls-8 { fill: theme('colors.blue.500') !important; }
       .cls-4 { stroke: theme('colors.blue.500') !important; }
       .cls-7 { fill: theme('colors.blue.700'); }
+  }
+  .face:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
   }
 </style>
